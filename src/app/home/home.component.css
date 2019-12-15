@@ -1,0 +1,24 @@
+h1, h2, h3, h4{
+   
+}
+
+h1{
+    font-size: 10vh;
+}
+h2{
+    font-size: 4vh;
+}
+h4{
+    font-size: 2vh;
+}
+
+.home-line{
+    background-color: white;
+}
+
+.home-title-col{
+    text-align: center;
+    margin: 25% 0;
+    color: white;
+}
+
