@@ -1,0 +1,19 @@
+h1{
+    font-size: calc((6vh + 6vw) / 2);
+}
+h2{
+    font-size: calc((3vh + 3vw) / 2);
+}
+h4{
+    font-size: calc((2vh + 2vw) / 2);
+}
+
+.home-line{
+    background-color: white;
+}
+
+.home-title-col{
+    text-align: center;
+    margin: 25% 0;
+    color: white;
+}
