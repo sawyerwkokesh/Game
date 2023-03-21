@@ -4,13 +4,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { RuleBookComponent } from './rule-book/rule-book.component';
-import { FeaturesComponent } from './features/features.component';
+import { MapComponent } from './map/map.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'rule-book', component: RuleBookComponent },
-  { path: 'features', component: FeaturesComponent}
+  { path: 'map', component: MapComponent}
 ];
 
 @NgModule({

@@ -1,4 +1,4 @@
-h1{
+/* h1{
     font-size: calc((6vh + 6vw) / 2);
 }
 h2{
@@ -9,11 +9,21 @@ h4{
 }
 
 .home-line{
-    background-color: white;
+    background-color: blackwhite;
 }
 
 .home-title-col{
     text-align: center;
     margin: 25% 0;
-    color: white;
+    color: black;
+} */
+
+.container{
+    padding-top: 15px;
+}
+.card-text-section{
+    padding-left: 15px;
+}
+.card-section{
+    padding-bottom: 15px;
 }

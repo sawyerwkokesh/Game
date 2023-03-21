@@ -7,13 +7,3 @@ h2{
 h4{
     font-size: calc((2vh + 2vw) / 2);
 }
-
-.home-line{
-    background-color: white;
-}
-
-.home-title-col{
-    text-align: center;
-    margin: 25% 0;
-    color: white;
-}
