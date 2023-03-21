@@ -10,6 +10,7 @@ import { MapComponent } from './map/map.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { ChartComponent } from './chart/chart.component';
+import { FactionsComponent } from './factions/factions.component';
 
 @NgModule({
   imports: [
@@ -23,7 +24,8 @@ import { ChartComponent } from './chart/chart.component';
     HomeComponent,
     RuleBookComponent,
     MapComponent,
-    ChartComponent
+    ChartComponent,
+    FactionsComponent
   ],
   bootstrap: [ AppComponent ]
 })

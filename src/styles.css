@@ -2,3 +2,6 @@
 html *{
     font-family: 'Ubuntu', sans-serif;
 }
+.component{
+    padding-top: 100px;
+}
