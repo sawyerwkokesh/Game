@@ -5,3 +5,6 @@ html *{
 .component{
     padding-top: 100px;
 }
+.container{
+    padding-top: 15px;
+}
