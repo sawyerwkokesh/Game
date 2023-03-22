@@ -13,7 +13,6 @@ export class MapComponent implements OnInit {
   }
 
   ngAfterViewInit(){
-    document.getElementById("china").style.fill = "#104704";
 
   }
 }
