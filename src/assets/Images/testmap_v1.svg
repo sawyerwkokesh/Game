@@ -1,4 +1,4 @@
-<svg class="imperiumMap" xmlns="http://www.w3.org/2000/svg"
+<svg id="imperiumMap" class="imperiumMap" xmlns="http://www.w3.org/2000/svg"
      width="41.9722in" height="40.6806in"
      viewBox="0 0 3022 2929">
     <defs>
