@@ -11,5 +11,5 @@ export class RuleBookComponent implements OnInit {
 
   ngOnInit() {
   }
-  
+
 }
