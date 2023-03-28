@@ -1,24 +1,31 @@
-h1, h2, h3, h4{
-   
-}
-
-h1{
-    font-size: calc((6vh + 6vw) / 2);
-}
-h2{
-    font-size: calc((3vh + 3vw) / 2);
-}
-h4{
-    font-size: calc((2vh + 2vw) / 2);
-}
-
-.home-line{
+.hero-line{
     background-color: black;
 }
 
-.home-title-col{
+.hero-col{
     text-align: center;
-    margin: 25% 0;
     color: black;
 }
 
+.hero {
+    position: relative; 
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero::before {    
+      content: "";
+      background-image: url("/assets/Images/testmap_v1.svg");
+      filter: drop-shadow(8px 8px 10px black) grayscale(1);
+      background-size: cover;
+      position: absolute;
+      background-position-y: center;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.15;
+}
