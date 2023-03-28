@@ -1,6 +1,10 @@
 .app-navbar {
-    background-color: #6d6875;
+    background-color: #2B303A;
     border-bottom-color: white;
     border-bottom-style: solid;
     border-bottom-width: thin;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav , .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link{
+    color: #D64933;
 }

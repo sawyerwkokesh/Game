@@ -18,7 +18,7 @@
 
 .hero::before {    
       content: "";
-      background-image: url("/assets/Images/testmap_v1.svg");
+      background-image: url('../../assets/Images/testmap_v1.svg');
       filter: drop-shadow(8px 8px 10px black) grayscale(1);
       background-size: cover;
       position: absolute;
@@ -28,4 +28,47 @@
       bottom: 0px;
       left: 0px;
       opacity: 0.15;
+}
+
+.hero-title{
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+    animation: fadein 4s;
+    -moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+    -o-animation: fadein 4s; /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }
