@@ -24,6 +24,13 @@ export class MapComponent implements OnInit {
     var woodList = svg.getElementsByClassName("wood");
     var goldList = svg.getElementsByClassName("gold");
     var moutainsList = svg.getElementsByClassName("moutains");
+    
+    var knightList = [9,10,11,12,13,14,15,16,17,19,69];
+    var aztekList = [20,22,23,24,25,26,27,28,29,30];
+    var greakList = [32,33,34,35,36,37,38,39,40,66];
+    var japanList = [42,43,44,45,46,47,48,49,50,64];
+    var mongol = [55,56,57,58,59,60,61,62,63,72,73,79,80];
+    var vikings = [2,3,4,5,6,7,70,71,75,76];
 
     // var grainIdList = [];
     // Array.from(grainList).forEach(e => {grainIdList.push(e.id)});
@@ -67,7 +74,7 @@ export class MapComponent implements OnInit {
   }
 
   private loadHoverEvents(svg: HTMLElement, list: HTMLCollectionOf<Element>, moutains: HTMLCollectionOf<Element>) {
-    var fillColor = list[0].getAttribute("fill");
+    // var fillColor = list[0].getAttribute("fill");
     Array.from(list).forEach(e => {
       e.addEventListener("mouseover", function fillItem() {
         Array.from(list).forEach(f => {
