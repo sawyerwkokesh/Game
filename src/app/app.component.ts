@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GlobalService } from './services/global.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Impirium';
+  constructor(
+    public globalService: GlobalService
+    ) { 
+      this.globalService.updateToFactionNames();
+    }
 }
