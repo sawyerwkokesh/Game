@@ -1,4 +1,4 @@
-<div class="component">
+<div class="rule-book component">
     <div class="row">
         <div class="sidenav col-lg-2">
             <h5>Getting Started</h5>
@@ -24,6 +24,7 @@
                 <a href="./rule-book#combat">Combat</a>
                 <a href="./rule-book#walls">Walls</a>
                 <a href="./rule-book#fallen">The Fallen</a>
+                <a href="./rule-book#winCondition">Win Condition</a>
                 <a href="./rule-book#constructionCost">Construction Costs</a>
                 <h5>Chaos Rolls</h5>
                 <a href="./rule-book#chaosRolls">Chaos Rolls</a>
@@ -1021,27 +1022,623 @@
 
             <div id="trade" class="container">
                 <div class="card">
-                    <h5 class="card-header">TMEP</h5>
+                    <h5 class="card-header">Trade</h5>
                     <div class="card-body">
                         <div class="card-section">
-                            <h5 class="card-title">TMEP:</h5>
                             <div class="card-text-section">
-                                <p class="card-text"> TMEP </p>
+                                <p class="card-text">
+                                    Players can generally allow any connecting players to access their wealth, but there are a few minor exceptions to this process.
+                                </p>
+                                <ul>
+                                    <li>
+                                        Players can only allow others to access their wealth if connected via unbroken territories (mountains disrupt this connection)
+                                    </li>
+                                    <li>
+                                        Wealth (gold and resources), DO NOT MOVE when trade is occurring. A player simply ‘opens their gates’ to allow another player access to a predetermined amount of wealth during a connected player's
+                                        construction phase. There is no guarantee they will return the favor or hold up the terms of the deal during your construction phase, so tread carefully when it comes to your trade deals
+                                    </li>
+                                    <li>
+                                        Players cannot trade units, or structures
+                                    </li>
+                                    <li>
+                                        If access to wealth depends upon shared territory, passage through a wall, or a naval fleet. The access can be halted by the player who owns the wall or naval fleet. In cases where two players occupy
+                                        a dependent territory, a dispute can break out to decide the outcome (only applies if no buildings are present on this shared territory)
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div id="temp" class="container">
+            <div id="combat" class="container">
                 <div class="card">
-                    <h5 class="card-header">TMEP</h5>
+                    <h5 class="card-header">Combat</h5>
                     <div class="card-body">
                         <div class="card-section">
-                            <h5 class="card-title">TMEP:</h5>
                             <div class="card-text-section">
-                                <p class="card-text"> TMEP </p>
+                                <p class="card-text">
+                                    All combat involving basic units is done in the same manner. The attacker will receive up to three dice that they will roll after announcing an attack from one territory to another. Each die must
+                                    correspond to an available unit in the attacking territory. Once the attacker has rolled their three dice the defender will roll up to two defending dice. Both the attacking and defending dice are placed
+                                    back to back so that the lowest numbers are on one side and the highest numbers are on the other. The highest roll of the attacker will be compared to the highest roll of the defender and the second
+                                    highest roll of the attacker will be compared to the second highest roll of the defender and so on and so forth if applicable. For each defending die that is equal to or higher than an attacking die an
+                                    attacking unit will perish. For each attacking die that is higher than a defending die a defending unit will perish (the defending player wins ties). This process will continue until the attacker either
+                                    successfully defeats all of the defending units or decides to cease the attack. Specialty units add to this basic system of combat as described in the “Factions” portion of the rule book (Pg.6-8).
+                                </p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="walls" class="container">
+                <div class="card">
+                    <h5 class="card-header">Walls</h5>
+                    <div class="card-body">
+                        <div class="card-section">
+                            <div class="card-text-section">
+                                <p class="card-text">
+                                    Walls, like settlements, act as a point for garrisons to take up arms without as much risk to the player. If an enemy decides to attack a wall the defending player must use a certain number of dice to
+                                    defend for as many clashes as necessary until all of the defending dice have been defeated or the enemy has retreated. If the wall is defeated all of its pegs from that border are removed and the
+                                    attacking player has the option to either continue into the territory or halt the attack in order to regroup. If the wall is not defeated, it regains any lost die from the previous battle for the next.
+                                    Wooden walls receive two defense dice and stone walls receive four (All of the die must be rolled at the same time).
+                                </p>
+                                <p class="card-text">
+                                    Walls are unique from settlement garrisons in that they also allow the defender to immediately reciprocate an attack (before the attacking player has an opportunity to refortify and move attacking units).
+                                    If the attacker chooses to halt their attack at any point after sieging the wall and the wall remains, the besieged player may utilize any number of their troops from the adjacent territory behind the
+                                    wall to launch a counter attack with offensive dice. During this battle the attacking player will win all ties, which affords a defensive advantage to an offensive battle. This perk can only be activated
+                                    if the counter attacking player's wall was attacked by another player. This battle doesn’t allow the counter attacking player to occupy the territory immediately, but simply allows them to engage enemy
+                                    units in a counter attack before retreating back to their defending territory.
+                                </p>
+                                <p class="card-text">
+                                    Constructed walls will remain on borders no longer occupied by the player who owns the wall. These walls can be used to block or negotiate trade over a border. Enemy units can also be allowed to pass
+                                    through the wall without combat, depending upon the discretion of the wall’s faction ruler.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="fallen" class="container">
+                <div class="card">
+                    <h5 class="card-header">The Fallen</h5>
+                    <div class="card-body">
+                        <div class="card-section">
+                            <div class="card-text-section">
+                                <p class="card-text">
+                                    The Fallen are a faction of undead that are unlikely to be introduced into any given game. If summoned there will undoubtedly be catastrophic consequences for all players. Fallen units behave exactly as
+                                    all other basic units do with the exception that in combat any unit that dies to fallen warriors will be immediately converted to a basic fallen unit themselves. In this way the fallen can be extremely
+                                    difficult to snuff out as defeated player units are constantly joining their ranks. Any villages under fallen control spawn one fallen unit in that territory during the chaos phase of the world order.
+                                    Cities produce two and a metropolis produces three. The fallen are not affected by plague, but are affected by monsters in the Age of Shadow.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="winCondition" class="container">
+                <div class="card">
+                    <h5 class="card-header">Win Condition TOOD: maybe need to rewrite</h5>
+                    <div class="card-body">
+                        <div class="card-section">
+                            <div class="card-text-section">
+                                <p class="card-text">
+                                    There are two ways to win the game of Imperium. Firstly and this goes for every faction, be the last surviving faction on the map. Though depending on the game this may not be possible, therefore each
+                                    faction has secondary win conditions specific to their playstyle. The first faction to complete theirs wins the game!
+                                </p>
+                                <ul>
+                                    <li>
+                                        <h5>
+                                            Beschützer Kingdom - The Great Defense:
+                                        </h5>
+                                        <p>
+                                            Hold the gold mine for three turn cycles with a completed stone wall and a metropolis.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h5>
+                                            Ishimatsu Clan - End of the Shogunate:
+                                        </h5>
+                                        <p>
+                                            Have access to over 50 resource tokens at once.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h5>
+                                            Skallen Raiders - Lord of the Skall
+                                        </h5>
+                                        <p>
+                                            Control over 30 units at once.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h5>
+                                            Chrysós Syndicate - Wealth Beyond Measure:
+                                        </h5>
+                                        <p>
+                                            Have over 100 gold available to you at once.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h5>
+                                            Khünik Horde - As Far as the Eye Can See:
+                                        </h5>
+                                        <p>
+                                            Occupy over 40 territories at once (over half the continent).
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h5>
+                                            Equani Tribe - The True Faith:
+                                        </h5>
+                                        <p>
+                                            Have a total of four sacred site temples at once.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="constructionCost" class="container">
+                <div class="card">
+                    <h5 class="card-header">Construction Costs</h5>
+                    <div class="card-body">
+                        <div class="card-section">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="card">
+                                            <img class="card-img-top"
+                                                src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_18701b1398b%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_18701b1398b%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.12312316894531%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                                                alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Village (level 1 settlement)</h5>
+                                                <p>
+                                                    Receive two predetermined resources / two gold
+                                                </p>
+                                                <p>
+                                                    COST: 2 wood, 1 livestock, 1 grain, 2 stone
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="card">
+                                            <img class="card-img-top"
+                                                src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_18701b1398b%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_18701b1398b%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.12312316894531%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                                                alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">City (level 2 settlement)</h5>
+                                                <p>
+                                                    Receive three predetermined resources / four gold
+                                                </p>
+                                                <p>
+                                                    COST: 1 livestock, 1 stone, 2 wood, 1 iron, 1 grain
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="card">
+                                            <img class="card-img-top"
+                                                src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_18701b1398b%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_18701b1398b%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.12312316894531%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                                                alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Metropolis (Level 3 settlement)</h5>
+                                                <p>
+                                                    Receive three predetermined resources plus one of your choice / six gold
+                                                </p>
+                                                <p>
+                                                    COST: 3 iron, 1 stone, 1 grain, 1 livestock
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="card">
+                                            <img class="card-img-top"
+                                                src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_18701b1398b%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_18701b1398b%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.12312316894531%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                                                alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Wooden Wall</h5>
+                                                <p>
+                                                    COST: 1 wood (per peg)
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="card">
+                                            <img class="card-img-top"
+                                                src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_18701b1398b%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_18701b1398b%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.12312316894531%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                                                alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Stone Wall</h5>
+                                                <p>
+                                                    COST: 2 stone (per peg)
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="card">
+                                            <img class="card-img-top"
+                                                src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_18701b1398b%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_18701b1398b%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.12312316894531%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                                                alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Temple</h5>
+                                                <p>
+                                                    COST: 5 stone
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="card">
+                                            <img class="card-img-top"
+                                                src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_18701b1398b%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_18701b1398b%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.12312316894531%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                                                alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Basic Unit</h5>
+                                                <p>
+                                                    COST: 1 iron, 1 grain, 1 livestock (one gold upkeep per turn)
+                                                </p>
+                                                <p>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="card">
+                                            <img class="card-img-top"
+                                                src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_18701b1398b%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_18701b1398b%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.12312316894531%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                                                alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Specialty Units (one gold upkeep per turn)</h5>
+                                                <p>
+                                                    Beschützer Knights: 4 iron, 2 grain, 1 livestock
+                                                </p>
+                                                <p>
+                                                    Ishimatsu Daimyo: 2 wood, 1 stone, 1 grain, 1 livestock
+                                                </p>
+                                                <p>
+                                                    Skallen Gjallarhorns: 1 iron, 3 grain, 2 livestock
+                                                </p>
+                                                <p>
+                                                    Chrysós Naval Fleets: 7 wood, 2 grain (receive 4 ships)
+                                                </p>
+                                                <p>
+                                                    Khünik Riders: 1 livestock, 1 iron
+                                                </p>
+                                                <p>
+                                                    Equani Shaman: 1 grain, 1 livestock, 1 wood, 1 stone
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="chaosRolls" class="container">
+                <div class="card">
+                    <h5 class="card-header">Chaos Rolls</h5>
+                    <div class="card-body">
+                        <div class="card-section">
+                            <h5 class="card-title">DICE ROLL: (roll four dice)</h5>
+                            <ol start="4">
+                                <li>
+                                    <h5>
+                                        Hell Rising:
+                                    </h5>
+                                    Use the “Age of Oblivion” chaos rolls from this point on. The volcano at the center of the map launches molten rocks into the sky as the earth cracks and burns. The gold mine and every adjacent territory
+                                    is burned to the ground and all units and buildings within those territories are corrupted by ‘The Fallen’...
+                                </li>
+                                <li>
+                                    <h5>
+                                        The Wrath of the Stars:
+                                    </h5>
+                                    A meteor strikes one territory at random. All structures and units on the territory are destroyed and the land becomes impassable for the remainder of the game.
+                                </li>
+                                <li>
+                                    <h5>
+                                        Disease Spreads:
+                                    </h5>
+                                    Two plague tokens are placed on two random territories (the plague immediately cuts the number of units in that territory in half).
+                                </li>
+                                <li>
+                                    <h5>
+                                        Dawn of Civilization:
+                                    </h5>
+                                    Upgrade all non-player controlled settlements by one level (the gold mine acquires a non-player controlled wooden wall whenever this is rolled, which destroys any player built walls)
+                                </li>
+                                <li>
+                                    <h5>
+                                        Stockpiles Burn:
+                                    </h5>
+                                    Destroy one resource token in every territory on the map
+                                </li>
+                                <li>
+                                    <h5>
+                                        Tables Turn:
+                                    </h5>
+                                    The player with the least number of occupied territories gets to swap two visible prosperity tokens on the board
+                                </li>
+                                <li>
+                                    <h5>
+                                        Spoils of the Weak:
+                                    </h5>
+                                    The player with the fewest units receives one gold for each unit
+                                </li>
+                                <li>
+                                    <h5>
+                                        Mines Collapse:
+                                    </h5>
+                                    No iron is generated this turn
+                                </li>
+                                <li>
+                                    <h5>
+                                        Treasuries Empty:
+                                    </h5>
+                                    No gold is generated this turn
+                                </li>
+                                <li>
+                                    <h5>
+                                        Crops Wither:
+                                    </h5>
+                                    No grain is generated this turn
+                                </li>
+                                <li>
+                                    <h5>
+                                        Strong Tides:
+                                    </h5>
+                                    No water routes may be used for travel
+                                </li>
+                                <li>
+                                    <h5>
+                                        Livestock Plagued:
+                                    </h5>
+                                    No livestock is generated this turn
+                                </li>
+                                <li>
+                                    <h5>
+                                        Wood Rots:
+                                    </h5>
+                                    No wood is generated this turn
+                                </li>
+                                <li>
+                                    <h5>
+                                        Quarries Collapse:
+                                    </h5>
+                                    No stone is generated this turn
+                                </li>
+                                <li>
+                                    <h5>
+                                        Unfortunate Tidings:
+                                    </h5>
+                                    Choose five random territories and remove all their wealth from the board
+                                </li>
+                                <li>
+                                    <h5>
+                                        Risks of Business:
+                                    </h5>
+                                    The territory with the most gold and the territory with the most resources must swap their tokens
+                                </li>
+                                <li>
+                                    <h5>
+                                        Treasuries Burn:
+                                    </h5>
+                                    Destroy two gold in every territory on the map
+                                </li>
+                                <li>
+                                    <h5>
+                                        Warriors Revolt:
+                                    </h5>
+                                    Players must pay double the usual upkeep for their units this turn
+                                </li>
+                                <li>
+                                    <h5>
+                                        Torrential Rains:
+                                    </h5>
+                                    Landslides reduce all buildings in territories that border mountains by one level.
+                                </li>
+                                <li>
+                                    <h5>
+                                        Waves of Destruction:
+                                    </h5>
+                                    Massive waves wash out all ocean facing territories. All buildings are reduced by one level and the number of occupying units are halved.
+                                </li>
+                                <li>
+                                    <h5>
+                                        Blinding Shadow:
+                                    </h5>
+                                    Use the “Age of Shadow” chaos rolls from this point on. All prosperity tokens including the ones on capital territories are removed, reshuffled and replaced (only occupied territories will be revealed and
+                                    the fog of prosperity will be restored)...
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="shadowRolls" class="container">
+                <div class="card">
+                    <h5 class="card-header">Age of Shadow Chaos Rolls</h5>
+                    <div class="card-body">
+                        <div class="card-section">
+                            <h5 class="card-title">DICE ROLL: (roll two dice)</h5>
+                            <ol start="2">
+                                <li>
+                                    <h5>
+                                        Apocalypse:
+                                    </h5>
+                                    All players lose the game and Trӧm is engulfed in shadow.
+                                </li>
+                                <li>
+                                    <h5>
+                                        Shadow Rulers:
+                                    </h5>
+                                    All players swap seats with the player to their right taking control of that player's faction (dead factions included in this process so that defeated players may re-enter the game).
+                                </li>
+                                <li>
+                                    <h5>
+                                        Something in the Darkness:
+                                    </h5>
+                                    For the rest of the game whenever a player attempts to cross a border (invasion or fortification) where a wall could be constructed the unit must roll a six sided die. If they roll a 4, 5, or 6 the unit
+                                    has survived the journey and if they do not the unit will be consumed (the Ishimatsu Clan can reroll 1’s in this process). Everytime this chaos number is rolled all walls will be destroyed.
+                                </li>
+                                <li>
+                                    <h5>
+                                        Unexpected Sabotage:
+                                    </h5>
+                                    Each player is forced to wipe all structures (walls, settlements, and temples) from a single chosen territory owned by the player to their left (dead factions are not involved in this process)
+                                </li>
+                                <li>
+                                    <h5>
+                                        Mysterious Losses:
+                                    </h5>
+                                    Players don’t receive resources for this turn cycle.
+                                </li>
+                                <li>
+                                    <h5>
+                                        The End of an Age:
+                                    </h5>
+                                    Return to basic chaos rolls and all plague is removed from the map.
+                                </li>
+                                <li>
+                                    <h5>
+                                        Thieves in the Night:
+                                    </h5>
+                                    Players don’t receive gold for this turn cycle.
+                                </li>
+                                <li>
+                                    <h5>
+                                        Unexpected Treachery:
+                                    </h5>
+                                    Each player is forced to wipe all units from a single chosen territory owned by the player to their right (dead factions are not involved in this process).
+                                </li>
+                                <li>
+                                    <h5>
+                                        Something in the Water:
+                                    </h5>
+                                    For the rest of the game whenever a player attempts to cross a water route (invasion or fortification) with a unit they must roll a six sided die for that unit. If they roll a 4, 5, or 6 the unit has
+                                    survived the journey and if they do not the unit will be consumed (the Ishimatsu Clan can reroll 1’s in this process). Everytime this chaos number is rolled all naval fleets will be destroyed, but these
+                                    rolls are resolved before naval fleet battles.
+                                </li>
+                                <li>
+                                    <h5>
+                                        Shadow Rulers:
+                                    </h5>
+                                    All players swap seats with the player to their left taking control of that player's faction (dead factions are included in this process so that defeated players may re-enter the game).
+                                </li>
+                                <li>
+                                    <h5>
+                                        Eternal Shadow:
+                                    </h5>
+                                    For the rest of the game whenever a player attempts to move into any territory (invasion or fortification) with a unit they must roll a six sided die for that unit. If they roll a 4, 5, or 6 the unit has
+                                    survived the journey and if they do not the unit will be consumed (the Ishimatsu Clan can reroll 1’s in this process). Everytime this chaos number is rolled after this point all wealth will be discarded
+                                    (Eternal Shadow overrides Something in the Water and Something in the Darkness)
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="oblivionRolls" class="container">
+                <div class="card">
+                    <h5 class="card-header">Age of Oblivion Chaos Rolls</h5>
+                    <div class="card-body">
+                        <div class="card-section">
+                            <h5 class="card-title">DICE ROLL: (roll two dice)</h5>
+                            <ol start="2">
+                                <li>
+                                    <h5>
+                                        Apocalypse:
+                                    </h5>
+                                    All players lose the game and Trӧm is engulfed in flames.
+                                </li>
+                                <li>
+                                    <h5>
+                                        The Great Contagion:
+                                    </h5>
+                                    Half the units present in each territory are killed (round up).
+                                </li>
+                                <li>
+                                    <h5>
+                                        The Fall of Civilization:
+                                    </h5>
+                                    All structures are destroyed.
+                                </li>
+                                <li>
+                                    <h5>
+                                        The Wrath of the Gods:
+                                    </h5>
+                                    Meteors strike the earth and destroy two random territories. All structures and units are decimated and the territories become permanently impassable.
+                                </li>
+                                <li>
+                                    <h5>
+                                        The Attrition of Fear:
+                                    </h5>
+                                    All territories on the map lose one unit (The Fallen are not affected).
+                                </li>
+                                <li>
+                                    <h5>
+                                        The End of an Age:
+                                    </h5>
+                                    Return to basic chaos rolls and all plague is removed from the map.
+                                </li>
+                                <li>
+                                    <h5>
+                                        The Rising Dead:
+                                    </h5>
+                                    Fallen territories receive one extra unit and all unoccupied territories receive one Fallen unit.
+                                </li>
+                                <li>
+                                    <h5>
+                                        The Great Corruption:
+                                    </h5>
+                                    Plague spawns on all Fallen controlled territories (The Fallen are not affected by plague).
+                                </li>
+                                <li>
+                                    <h5>
+                                        Watchers in the Rubble:
+                                    </h5>
+                                    The Fallen destroy all constructed walls and patrol all wall borders with a garrison of two Fallen soldiers for the rest of the game. Losing an attacking soldier adds a defensive die to The Fallen patrol.
+                                </li>
+                                <li>
+                                    <h5>
+                                        Pilgrimage of the Dead:
+                                    </h5>
+                                    The Fallen convert all units in the territory with the most units to Fallen soldiers and move to a random territory via the most efficient path (roll two dice to break ties for the most efficient route).
+                                </li>
+                                <li>
+                                    <h5>
+                                        Empire of the Dead:
+                                    </h5>
+                                    The Fallen take over all capitals and absorb all units and structures within those territories.
+                                </li>
+                            </ol>
                         </div>
                     </div>
                 </div>
