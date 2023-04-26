@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
+import { constants } from 'buffer';
 import { BehaviorSubject } from 'rxjs';
+import { constCringeNames, constFactionNames } from 'src/constants/constants';
 
 @Injectable ({
     providedIn: 'root'
@@ -7,15 +9,15 @@ import { BehaviorSubject } from 'rxjs';
 
 export class GlobalService {
     public currentNames = new BehaviorSubject<any>({
-        knight: 'knights'
+        knight: constFactionNames.knight
     })
 
     public factionNames = new BehaviorSubject<any>({
-        knight: 'Knights'
+        knight: constFactionNames.knight
     })
 
     public cringeNames = new BehaviorSubject<any>({
-        knight: 'cringe knight'
+        knight: constCringeNames.knight
     })
 
     updateToFactionNames(){

@@ -1,4 +1,4 @@
-export const factionNames = {
+export const constFactionNames = {
     japan: "japan",
     knight: "knight",
     viking: "viking",
@@ -7,7 +7,7 @@ export const factionNames = {
     aztec: "aztec"
 }
 
-export const cringeNames = {
+export const constCringeNames = {
     japan: "The Ishimatsu Clan",
     knight: "The Kingdom of Beschützer",
     viking: "The Skallen Raiders",

@@ -21,9 +21,7 @@ export class FactionsComponent implements OnInit {
     public globalService: GlobalService,
     ) { 
       document.getElementById('CringeNameUppdate').onclick = function() {
-        console.log('here');
-        console.log(globalService.currentNames.value.knight);
-        document.getElementById('knightFaction').innerHTML = globalService.currentNames.value.knight;
+        $('.knightTitle').text(globalService.currentNames.value.knight);
       }
 
       this.globalService.currentNames.subscribe({
