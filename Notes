@@ -30,9 +30,11 @@ for furture reference
 use data-parent if you want to close after onther is open <div id="collapseGameBoard" class="collapse" aria-labelledby="headingGameBoard" data-parent="#accordion">
 
 TODO:
--faction reference card pages
-
-possible que up calulator
-
-dev odds calucator for the buffs
+    -faction reference card for each faction
+        -make look good on phones, or ipad
+    -que up calulator
+        -for instance if imput all current things you have, and display different things you can buy
+    -dev odds calucator
+        -implement the rules of the game, and how chance works, so multiples rolls can be played and display the odds.
+        -usful to see if the game is unballanced in some way
 
