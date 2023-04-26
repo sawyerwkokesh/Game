@@ -21,7 +21,12 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" routerLink="/factions">Factions</a>
             <a class="dropdown-item" href="#">TODO: calulator</a>
-            <a id="CringeNameUppdate" class="dropdown-item" (click)="CringeNames()">Cringe Names</a>
+            <a class="dropdown-item" href="#">
+              <div id="CringeNameUppdate" class=" custom-switch">
+                <input type="checkbox" class="custom-control-input" id="CringeSwitch" (click)="CringeNames()">
+                <label class="custom-control-label" for="CringeSwitch">Cringe Name</label>
+              </div>
+            </a>
           </div>
         </li>
       </ul>

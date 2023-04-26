@@ -1,3 +1,4 @@
+import { checkDate } from '@amcharts/amcharts4/.internal/core/utils/Type';
 import { Component, OnInit } from '@angular/core';
 import { GlobalService } from 'src/app/services/global.service';
 
@@ -13,7 +14,15 @@ export class HeaderComponent implements OnInit {
   }
 
   CringeNames(){
-    this.globalService.updateToCringeNames();
+    var cringeSwitch = document.getElementById("CringeNameUppdate");
+    if(cringeSwitch.classList.contains("checked")){
+      this.globalService.updateToFactionNames();
+      cringeSwitch.classList.remove("checked")
+    } else {
+      this.globalService.updateToCringeNames();
+      cringeSwitch.classList.add("checked")
+    } 
+    console.log(this.globalService.currentNames.value.knight);
   }
 
   ngOnInit() {

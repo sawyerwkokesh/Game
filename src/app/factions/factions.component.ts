@@ -22,9 +22,13 @@ export class FactionsComponent implements OnInit {
     ) { 
       document.getElementById('CringeNameUppdate').onclick = function() {
         console.log('here');
-        var temp = globalService.currentNames.value.knight;
-        console.log(temp);
+        console.log(globalService.currentNames.value.knight);
+        document.getElementById('knightFaction').innerHTML = globalService.currentNames.value.knight;
       }
+
+      this.globalService.currentNames.subscribe({
+        next: newValue => console.log('Update Detected:', newValue)
+      });
     }
     
   
