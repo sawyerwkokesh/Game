@@ -26,7 +26,7 @@ export class GlobalService {
         aztec: constFactionNames.aztec
     })
 
-    public cringeNames = new BehaviorSubject<any>({\
+    public cringeNames = new BehaviorSubject<any>({
         japan: constCringeNames.japan,
         knight: constCringeNames.knight,
         viking: constCringeNames.viking,
