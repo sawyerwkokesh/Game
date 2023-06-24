@@ -22,7 +22,7 @@ export class HeaderComponent implements OnInit {
       this.globalService.updateToCringeNames();
       cringeSwitch.classList.add("checked")
     } 
-    console.log(this.globalService.currentNames.value.knight);
+    // console.log(this.globalService.currentNames.value.knight);
   }
 
   ngOnInit() {
